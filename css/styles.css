@@ -1,0 +1,265 @@
+:root {
+  --navigation-color:#2E2F42;
+  --contacts-color: #434455;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+body {
+  width: 1440px;
+  height: 2590px;
+
+  background: #E5E5E5;
+  font-family: "Roboto";
+}
+
+/* -----------------------HEADER--------------------------- */
+.header {
+}
+.header-logo {
+  font-family: 'Raleway';
+font-style: normal;
+font-weight: 800;
+font-size: 18px;
+line-height: 1.33;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+
+}
+.header-logo-web {
+  color: #4D5AE5;
+}
+.header-logo-studio {
+  color: #2E2F42;
+}
+.header-navigation {
+  font-weight: 500;
+font-size: 16px;
+line-height: 1.50;
+letter-spacing: 0.02em;
+
+}
+.header-navigation-list {
+}
+.header-navigation-studio {
+  color:var(--navigation-color);
+}
+.header-navigation-portfolio {
+  color:var(--navigation-color);
+}
+.header-navigation-contacts {
+  color:var(--navigation-color);
+}
+.header-list-contacts{
+
+}
+
+.header-contacts {
+font-weight: 400;
+font-size: 16px;
+line-height: 1.50;
+letter-spacing: 0.02em;
+
+
+
+}
+.header-contacts-mail {
+  color: var(--contacts-color);
+}
+.header-contacts-phone {
+  color:var(--contacts-color);
+}
+/* --------------------------HERO------------------------ */
+.hero {
+  background: #2E2F42;
+}
+.hero-text {
+
+font-size: 56px;
+line-height: 1.07;
+text-align: center;
+letter-spacing: 0.02em;
+color: #FFFFFF;
+}
+.hero-button {
+  background: #4D5AE5;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+
+}
+.hero-button-orderservice {
+font-family: inherit;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.50;
+letter-spacing: 0.04em;
+color: #FFFFFF;
+}
+.qualities {
+}
+.qualities-section-name {
+}
+.qualities-list {
+  font-weight: 500;
+font-size: 20px;
+line-height: 1.20;
+letter-spacing: 0.02em;
+color: #2E2F42;
+}
+.qualities-list-strategy {
+}
+
+.qualities-list-strategy-name {
+
+}
+.qualities-list-text {
+font-weight: 400;
+font-size: 16px;
+line-height: 1.50;
+letter-spacing: 0.02em;
+color: #434455;
+}
+.qualities-list-punctuality-name {
+}
+.qualities-list-diligence-name {
+}
+.qualities-list-tehnologies-name {
+}
+/* -----------------------WORKS------------------------- */
+.works {
+}
+.works-name {
+font-weight: 700;
+font-size: 36px;
+line-height: 1.11;
+text-align: center;
+letter-spacing: 0.02em;
+text-transform: capitalize;
+color: #2E2F42;
+}
+.works-list {
+}
+.works-list-one {
+}
+.works-list-two {
+}
+.works-list-three {
+}
+/* --------------------------TEAM------------------------------------ */
+.team {
+}
+.team-name {
+  font-weight: 700;
+font-size: 36px;
+line-height: 1.11;
+text-align: center;
+letter-spacing: 0.02em;
+text-transform: capitalize;
+color: #2E2F42;
+}
+.team-list {
+}
+.team-list-mark {
+}
+.team-list-name {
+  font-weight: 500;
+font-size: 20px;
+line-height: 1.20;
+text-align: center;
+letter-spacing: 0.02em;
+color: #2E2F42;
+}
+.team-list-job {
+  font-weight: 400;
+font-size: 16px;
+line-height: 1.50;
+text-align: center;
+letter-spacing: 0.02em;
+color: #434455;
+}
+.team-list-tom {
+}
+.team-list-camila {
+}
+.team-list-daniel {
+}
+/* -----------------------------FOOTER------------------------ */
+.footer {
+ background: #2E2F42;
+}
+.footer-logo{
+  font-family: 'Raleway';
+font-weight: 800;
+font-size: 18px;
+line-height: 1.16;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+}
+.footer-logo-web{
+  color: #4D5AE5;
+
+}
+.footer-logo-studio{
+  color: #F4F4FD;
+
+}
+.footer-text {
+  font-weight: 400;
+font-size: 16px;
+line-height: 1.50;
+letter-spacing: 0.02em;
+color: #E7E9FC;
+}
+
+/* -------------------PAGE2---PORTFOLIO------FILTERS--------- */
+.filters {
+}
+.filters-btn {
+font-family: inherit;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.04em;
+color: #4D5AE5;
+}
+.filters-btn:hover {background: #404BBF;
+box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+border-radius: 4px;
+color: #FFFFFF;
+}
+/* -----------------------------CARDS------------------------------------ */
+.cards {
+}
+.cards-list {
+}
+.cards-name {
+font-weight: 500;
+font-size: 20px;
+line-height: 1.20;
+letter-spacing: 0.02em;
+color: #2E2F42;
+}
+.cards-text {
+font-weight: 400;
+font-size: 16px;
+line-height: 1.50;
+letter-spacing: 0.02em;
+color: #434455;
+}
