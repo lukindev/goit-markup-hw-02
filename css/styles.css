@@ -143,12 +143,11 @@ body {
 }
 .qualities-list-strategy {
 }
-.qualities-list-h3 {
+.qualities-list-name {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: var(--navigation-color);
 }
 
 .qualities-list-strategy-name {
@@ -174,7 +173,6 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  color: var(--navigation-color);
 }
 .works-list {
 }
@@ -193,7 +191,6 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  color: var(--navigation-color);
 }
 .team-list {
 }
@@ -205,7 +202,6 @@ body {
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.02em;
-  color: var(--navigation-color);
 }
 .team-list-job {
   font-size: 16px;
@@ -261,7 +257,6 @@ body {
   background: var(--hover-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
   color: var(--white-color);
 }
 /* -----------------------------CARDS------------------------------------ */
