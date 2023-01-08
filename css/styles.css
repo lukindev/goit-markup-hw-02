@@ -1,6 +1,11 @@
 :root {
   --navigation-color: #2e2f42;
   --contacts-color: #434455;
+  --logo-color: #4d5ae5;
+  --hover-color: #404bbf;
+  --white-color: #ffffff;
+  --footer-logo-studio-color: #f4f4fd;
+  --footer-text-color: #e7e9fc;
 }
 
 .visually-hidden {
@@ -23,8 +28,9 @@
   text-decoration: none;
 }
 body {
-  background: #ffffff;
+  background: var(--white-color);
   font-family: "Roboto", sans-serif;
+  color: var(--navigation-color);
 }
 
 /* -----------------------HEADER--------------------------- */
@@ -37,7 +43,7 @@ body {
   line-height: 1.33;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #4d5ae5;
+  color: var(--logo-color);
 }
 
 .header-logo-studio {
@@ -51,24 +57,30 @@ body {
 }
 .header-navigation-list {
 }
-.header-navigation-studio,
+.header-navigation-studio {
+  color: var(--navigation-color);
+}
 .header-navigation-studio:hover,
 .header-navigation-studio:focus {
-  color: var(--navigation-color);
+  color: var(--hover-color);
 }
 
-.header-navigation-portfolio,
+.header-navigation-portfolio {
+  color: var(--navigation-color);
+}
 .header-navigation-portfolio:hover,
 .header-navigation-portfolio:focus {
+  color: var(--hover-color);
+}
+
+.header-navigation-contacts {
   color: var(--navigation-color);
 }
 
-.header-navigation-contacts,
 .header-navigation-contacts:hover,
 .header-navigation-contacts:focus {
-  color: var(--navigation-color);
+  color: var(--hover-color);
 }
-
 .header-list-contacts {
 }
 
@@ -79,6 +91,10 @@ body {
 }
 .header-contacts-mail {
   color: var(--contacts-color);
+}
+.header-contacts-mail:hover,
+.header-contacts-mail:focus {
+  color: var(--hover-color);
 }
 .header-contacts-phone {
   color: var(--contacts-color);
@@ -92,12 +108,17 @@ body {
   line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
-  color: #ffffff;
+  color: var(--white-color);
 }
-.hero-button,
+.hero-button {
+  background: var(--logo-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+}
 .hero-button:hover,
 .hero-button:focus {
-  background: #4d5ae5;
+  background: var(--hover-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
@@ -108,26 +129,27 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  color: #ffffff;
+  color: var(--white-color);
 }
 .qualities {
 }
 .qualities-section-name {
 }
 .qualities-list {
+}
+.qualities-list-strategy {
+}
+.qualities-list-h3 {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--navigation-color);
 }
-.qualities-list-strategy {
-}
 
 .qualities-list-strategy-name {
 }
 .qualities-list-text {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -205,16 +227,16 @@ body {
   line-height: 1.16;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #4d5ae5;
+  color: var(--logo-color);
 }
 .footer-logo-studio {
-  color: #f4f4fd;
+  color: var(--footer-logo-studio-color);
 }
 .footer-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #e7e9fc;
+  color: var(--footer-text-color);
 }
 
 /* -------------------PAGE2---PORTFOLIO------FILTERS--------- */
@@ -226,16 +248,17 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  color: #4d5ae5;
+  color: var(--logo-color);
   cursor: pointer;
+  border-radius: 4px;
 }
 .filters-btn:hover,
 .filters-btn:focus {
-  background: #404bbf;
+  background: var(--hover-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
-  color: #ffffff;
+  color: var(--white-color);
 }
 /* -----------------------------CARDS------------------------------------ */
 .cards {
