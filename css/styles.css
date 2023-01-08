@@ -99,6 +99,10 @@ body {
 .header-contacts-phone {
   color: var(--contacts-color);
 }
+.header-contacts-phone:hover,
+.header-contacts-phone:focus {
+  color: var(--hover-color);
+}
 /* --------------------------HERO------------------------ */
 .hero {
   background: var(--navigation-color);
