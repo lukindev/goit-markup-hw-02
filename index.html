@@ -10,13 +10,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet"/>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"/>
+    
   </head>
   <body>
     <!-- navigation -->
     <header class="header">
-      <nav>
+      <div class="container container-header">
+      <nav class="header-general">
         <a href="./index.html" class="header-logo link"
           >Web<span class="header-logo-studio">Studio</span></a
         >
@@ -36,6 +38,7 @@
         </ul>
       </nav>
       <!-- contacts -->
+      <address class="address-contact">
       <ul class="header-list-contacts list">
         <li class="header-contacts">
           <a
@@ -53,18 +56,21 @@
           >
         </li>
       </ul>
+      </address>
     </header>
     <main>
       <!-- main -->
       <section class="hero">
+       <div class="container container-main">
         <h1 class="hero-text">Effective Solutions <br />for Your Business</h1>
         <button type="button" class="hero-button hero-button-orderservice">
           Order Service
         </button>
       </section>
       <section class="qualities">
+        <div class="container">
         <h2 class="qualities-section-name visually-hidden">Our Qualities</h2>
-        <ul class="list">
+        <ul class=" qualities-unordered list">
           <li class="qualities-list">
     <h3 class="qualities-list-strategy-name qualities-list-name">Strategy</h3>
             <p class="qualities-list-text">
@@ -97,8 +103,10 @@
             </p>
           </li>
         </ul>
+        </div>
       </section>
       <section class="works">
+        <div class="container">
         <h2 class="works-name">What are we doing</h2>
         <ul class="works-list list">
           <li class="works-list-one">
@@ -129,54 +137,65 @@
       </section>
       <!-- team -->
       <section class="team">
+        <div class="container">
         <h2 class="team-name">Our Team</h2>
         <ul class="team-list list">
-          <li class="team-list-mark">
+          <li class="team-list-person">
             <img
               src="./images/mark.jpg"
               alt="Mark Guerrero"
               width="264"
               height="260"
             />
+            <div class="container-team">
             <h3 class="team-list-name">Mark Guerrero</h3>
             <p class="team-list-job">Product Designer</p>
+            </div>
           </li>
 
-          <li class="team-list-tom">
+          <li class="team-list-person">
             <img
               src="./images/tom.jpg"
               alt="Tom Ford"
               width="264"
               height="260"
             />
+            <div class="container-team">
             <h3 class="team-list-name">Tom Ford</h3>
             <p class="team-list-job">Frontend Developer</p>
+            </div>
           </li>
-          <li class="team-list-camila">
+          <li class="team-list-person">
             <img
               src="./images/camila.jpg"
               alt="Camila Garcia"
               width="264"
               height="260"
             />
+            <div class="container-team">
             <h3 class="team-list-name">Camila Garcia</h3>
             <p class="team-list-job">Marketing</p>
+            </div>
           </li>
-          <li class="team-list-daniel">
+          <li class="team-list-person">
             <img
               src="./images/daniel.jpg"
               alt="Daniel Wilson"
               width="264"
               height="260"
             />
+            <div class="container-team">
             <h3 class="team-list-name">Daniel Wilson</h3>
             <p class="team-list-job">UI Designer</p>
+            </div>
           </li>
         </ul>
+        </div>
       </section>
     </main>
     <!-- footer -->
     <footer class="footer">
+      <div class="container">
       <a href="./index.html" class="footer-logo link"
         >Web<span class="footer-logo-studio">Studio</span></a
       >
@@ -184,6 +203,7 @@
         Increase the flow of customers and sales for your business with digital
         marketing & growth solutions.
       </p>
+      </div>
     </footer>
   </body>
 </html>

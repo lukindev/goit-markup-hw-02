@@ -27,6 +27,25 @@
 .link {
   text-decoration: none;
 }
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 body {
   background: var(--white-color);
   font-family: "Roboto", sans-serif;
@@ -35,7 +54,24 @@ body {
 
 /* -----------------------HEADER--------------------------- */
 .header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #e7e9fc;
 }
+.container {
+  max-width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container-header {
+  display: flex;
+}
+.header-general {
+  display: flex;
+}
+
 .header-logo {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -44,6 +80,9 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--logo-color);
+  margin-right: 76px;
+  display: flex;
+  align-items: center;
 }
 
 .header-logo-studio {
@@ -54,6 +93,10 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
 }
 .header-navigation-list {
 }
@@ -81,7 +124,12 @@ body {
 .header-navigation-contacts:focus {
   color: var(--hover-color);
 }
+.address-contact {
+  margin-left: auto;
+}
 .header-list-contacts {
+  display: flex;
+  gap: 40px;
 }
 
 .header-contacts {
@@ -105,7 +153,11 @@ body {
 }
 /* --------------------------HERO------------------------ */
 .hero {
+  padding-top: 188px;
+  padding-bottom: 188px;
   background: var(--navigation-color);
+}
+.container-main {
 }
 .hero-text {
   font-size: 56px;
@@ -113,12 +165,18 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--white-color);
+  margin-bottom: 48px;
 }
 .hero-button {
   background: var(--logo-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  padding: 16px 32px;
+  border: 0;
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -136,10 +194,18 @@ body {
   color: var(--white-color);
 }
 .qualities {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .qualities-section-name {
 }
+.qualities-unordered {
+  display: flex;
+  gap: 24px;
+}
+
 .qualities-list {
+  width: calc((100% - 72px) / 4);
 }
 .qualities-list-strategy {
 }
@@ -166,6 +232,8 @@ body {
 }
 /* -----------------------WORKS------------------------- */
 .works {
+  padding-top: 0;
+  padding-bottom: 120px;
 }
 .works-name {
   font-size: 36px;
@@ -173,35 +241,51 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  margin-bottom: 72px;
 }
 .works-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: space-between;
 }
 .works-list-one {
+  width: calc((100% - 48px) / 3);
 }
 .works-list-two {
+  width: calc((100% - 48px) / 3);
 }
 .works-list-three {
+  width: calc((100% - 48px) / 3);
 }
 /* --------------------------TEAM------------------------------------ */
 .team {
+  background: var(--footer-logo-studio-color);
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
+
 .team-name {
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  margin-bottom: 72px;
 }
 .team-list {
+  display: flex;
+  gap: 24px;
 }
-.team-list-mark {
-}
+
 .team-list-name {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 .team-list-job {
   font-size: 16px;
@@ -210,15 +294,24 @@ body {
   letter-spacing: 0.02em;
   color: var(--contacts-color);
 }
-.team-list-tom {
+.team-list-person {
+  background: var(--white-color);
+  box-shadow: 0px 1px 6px rgb(46 47 66 / 8%), 0px 1px 1px rgb(46 47 66 / 16%),
+    0px 2px 1px rgb(46 47 66 / 8%);
+  border-radius: 0px 0px 4px 4px;
+  width: calc((100% - 72px) / 4);
 }
-.team-list-camila {
+.container-team {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  background-color: var(--white-color);
 }
-.team-list-daniel {
-}
+
 /* -----------------------------FOOTER------------------------ */
 .footer {
   background: var(--navigation-color);
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 .footer-logo {
   font-family: "Raleway", sans-serif;
@@ -228,6 +321,9 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--logo-color);
+  display: flex;
+  margin-bottom: 8px;
+  align-items: center;
 }
 .footer-logo-studio {
   color: var(--footer-logo-studio-color);
@@ -237,10 +333,24 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--footer-text-color);
+  width: 264px;
 }
 
 /* -------------------PAGE2---PORTFOLIO------FILTERS--------- */
+.portfolio {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+.container-btn {
+  margin-bottom: 72px;
+}
+
 .filters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
 }
 .filters-btn {
   font-family: inherit;
@@ -251,6 +361,12 @@ body {
   color: var(--logo-color);
   cursor: pointer;
   border-radius: 4px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background: var(--footer-logo-studio-color);
+  padding: 12px 24px;
+  border: 1px solid var(--footer-text-color);
 }
 .filters-btn:hover,
 .filters-btn:focus {
@@ -260,9 +376,26 @@ body {
   color: var(--white-color);
 }
 /* -----------------------------CARDS------------------------------------ */
+.container-img {
+  padding-bottom: 120px;
+}
+
 .cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 .cards-list {
+  margin: 24px 12px 24px 12px;
+  width: calc((100% - 72px) / 3);
+}
+.container-text {
+  padding-left: 16px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  border-right: 1px solid var(--footer-text-color);
+  border-left: 1px solid var(--footer-text-color);
+  border-bottom: 1px solid var(--footer-text-color);
 }
 .cards-name {
   font-weight: 500;
@@ -270,6 +403,7 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--navigation-color);
+  margin-bottom: 8px;
 }
 .cards-text {
   font-size: 16px;
